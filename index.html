@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    <title>Student Registration System</title>
+</head>
+<body>
+  <!-- Form Display -->
+    <section class="main-section">
+        <section class="form-display">
+            <h1 class="createAccountTitleText">Student Registration System</h1>
+            <br>
+            <p class="createAccountTextBelow">
+                A student registration system where students can register their details such as name,
+                class, address, and contact number.</p>
+                <br><br>
+            <form id="student-form" target="#" method="POST">
+                <input type="text" name="studentName"  placeholder="Enter Your Student Name" required>
+                <br>
+                <input type="number" name="studentId"   placeholder="Enter Your Student Id" required>
+                <br>
+                <input type="email" name="emailId"  placeholder="Enter Your Email Id" required>
+    
+                <input type="number" name="contactNo" placeholder="Enter Your Contact Number" required>
+
+                <input id="submitButton" type="submit"  name="SubmitButton"  value="Add Student">
+                <br>
+             
+            </form>
+        </section>
+        <section class="table-area">
+            <div class="table-container">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="table-main">
+                  <!-- Rows go here -->
+                </tbody>
+              </table>
+              </div>
+              
+              
+
+        </section>
+
+    </section>
+    
+</body>
+<script src="index.js"></script>
+</html>
